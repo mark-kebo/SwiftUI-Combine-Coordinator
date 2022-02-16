@@ -8,6 +8,6 @@
 import UIKit
 
 protocol CoordinatorProtocol {
-    var router: UINavigationController? { get }
+    var rootNavigationController: UINavigationController? { get }
     func start()
 }

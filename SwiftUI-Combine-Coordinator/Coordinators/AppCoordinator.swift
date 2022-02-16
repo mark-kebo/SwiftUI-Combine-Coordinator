@@ -8,10 +8,10 @@
 import UIKit
 import SwiftUI
 
-class AppCoordinator: CoordinatorProtocol {
+final class AppCoordinator: CoordinatorProtocol {
     private let window: UIWindow
     
-    internal var router: UINavigationController?
+    internal var rootNavigationController: UINavigationController?
 
     init(window: UIWindow) {
         self.window = window
@@ -20,11 +20,15 @@ class AppCoordinator: CoordinatorProtocol {
     func start() {
         self.showTabBar()
     }
+    
+    deinit {
+        NSLog("\(self) deinited")
+    }
 
     private func showTabBar() {
         // Use a UIHostingController as window root view controller
         let controller = UIHostingController(rootView: RootTabBarView())
-        router = UINavigationController(rootViewController: controller)
-        window.rootViewController = router
+        rootNavigationController = UINavigationController(rootViewController: controller)
+        window.rootViewController = rootNavigationController
     }
 }
