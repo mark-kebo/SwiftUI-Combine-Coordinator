@@ -15,6 +15,7 @@
 		D03175E327BD14A90015A19E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175E227BD14A90015A19E /* AppCoordinator.swift */; };
 		D03175E827BD15740015A19E /* RootTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175E727BD15740015A19E /* RootTabBarView.swift */; };
 		D03175EA27BD15890015A19E /* RootTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175E927BD15890015A19E /* RootTabBarViewModel.swift */; };
+		D03175EC27BD1EFD0015A19E /* RootTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175EB27BD1EFD0015A19E /* RootTabBarCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D03175E227BD14A90015A19E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		D03175E727BD15740015A19E /* RootTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarView.swift; sourceTree = "<group>"; };
 		D03175E927BD15890015A19E /* RootTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewModel.swift; sourceTree = "<group>"; };
+		D03175EB27BD1EFD0015A19E /* RootTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		D03175DF27BD0FDC0015A19E /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				D03175ED27BD1F7D0015A19E /* TempDetailsUseCase */,
 				D03175E427BD151D0015A19E /* RootTabBarUseCase */,
 			);
 			path = UseCases;
@@ -95,6 +98,7 @@
 			children = (
 				D03175E527BD154B0015A19E /* RootTabBarDTO */,
 				D03175E727BD15740015A19E /* RootTabBarView.swift */,
+				D03175EB27BD1EFD0015A19E /* RootTabBarCoordinator.swift */,
 			);
 			path = RootTabBarUseCase;
 			sourceTree = "<group>";
@@ -105,6 +109,13 @@
 				D03175E927BD15890015A19E /* RootTabBarViewModel.swift */,
 			);
 			path = RootTabBarDTO;
+			sourceTree = "<group>";
+		};
+		D03175ED27BD1F7D0015A19E /* TempDetailsUseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TempDetailsUseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				D03175CA27BD0EB60015A19E /* AppDelegate.swift in Sources */,
 				D03175CC27BD0EB60015A19E /* SceneDelegate.swift in Sources */,
 				D03175E127BD101D0015A19E /* Coordinator.swift in Sources */,
+				D03175EC27BD1EFD0015A19E /* RootTabBarCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,5 +8,6 @@
 import Foundation
 
 final class RootTabBarViewModel {
+    var coordinator: FillUserDataCoordinatorProtocol?
     
 }
