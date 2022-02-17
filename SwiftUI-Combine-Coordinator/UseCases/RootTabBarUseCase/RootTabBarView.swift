@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct RootTabBarView: View {
+    public var viewModel: RootTabBarViewModel?
+    
     var body: some View {
-         Text("Hello, World!")
+        VStack {
+            Text("Tabs")
+            Button("Next") {
+                viewModel?.buttonPressed()
+            }
+        }
     }
 }
 

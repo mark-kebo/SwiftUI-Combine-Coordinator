@@ -20,7 +20,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             let coordinator = AppCoordinator(window: window)
             coordinator.start()
-            window.makeKeyAndVisible()
         }
     }
 
@@ -52,6 +51,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
 }
-

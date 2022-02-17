@@ -8,27 +8,25 @@
 import UIKit
 import SwiftUI
 
-final class AppCoordinator: CoordinatorProtocol {
+final class AppCoordinator: Coordinator, CoordinatorProtocol {
     private let window: UIWindow
     
-    internal var rootNavigationController: UINavigationController?
+    var rootNavigationController: UINavigationController?
+    var view: AnyView?
 
     init(window: UIWindow) {
         self.window = window
     }
 
     func start() {
-        self.showTabBar()
-    }
-    
-    deinit {
-        NSLog("\(self) deinited")
+        rootNavigationController = UINavigationController()
+        window.rootViewController = rootNavigationController
+        window.makeKeyAndVisible()
+        showTabBar()
     }
 
     private func showTabBar() {
-        // Use a UIHostingController as window root view controller
-        let controller = UIHostingController(rootView: RootTabBarView())
-        rootNavigationController = UINavigationController(rootViewController: controller)
-        window.rootViewController = rootNavigationController
+        let childCoordinator = RootTabBarCoordinator(rootNavigationController: rootNavigationController)
+        childCoordinator.start()
     }
 }

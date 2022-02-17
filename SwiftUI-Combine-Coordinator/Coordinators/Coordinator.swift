@@ -6,8 +6,16 @@
 //
 
 import UIKit
+import SwiftUI
 
 protocol CoordinatorProtocol {
     var rootNavigationController: UINavigationController? { get }
+    var view: AnyView? { get }
     func start()
+}
+
+class Coordinator {
+    deinit {
+        NSLog("\(self) deinited")
+    }
 }

@@ -8,6 +8,14 @@
 import Foundation
 
 final class RootTabBarViewModel {
-    var coordinator: FillUserDataCoordinatorProtocol?
+    public var coordinator: RootTabBarCoordinatorProtocol?
+
+    init(coordinator: RootTabBarCoordinatorProtocol) {
+        self.coordinator = coordinator
+    }
     
+    public func buttonPressed() {
+        coordinator?.coordinateToDetails()
+    }
+
 }
