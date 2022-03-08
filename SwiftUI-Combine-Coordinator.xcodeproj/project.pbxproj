@@ -94,6 +94,7 @@
 			children = (
 				D03175E027BD101D0015A19E /* Coordinator.swift */,
 				D03175E227BD14A90015A19E /* AppCoordinator.swift */,
+				D03175EB27BD1EFD0015A19E /* RootTabBarCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -104,17 +105,8 @@
 				D0F6A7B227BE8FBB00B9029D /* SecondUseCase */,
 				D0F6A7B127BE8FAD00B9029D /* FirstUseCase */,
 				D0F6A7A927BE45E900B9029D /* DetailsUseCase */,
-				D03175E427BD151D0015A19E /* RootTabBarUseCase */,
 			);
 			path = UseCases;
-			sourceTree = "<group>";
-		};
-		D03175E427BD151D0015A19E /* RootTabBarUseCase */ = {
-			isa = PBXGroup;
-			children = (
-				D03175EB27BD1EFD0015A19E /* RootTabBarCoordinator.swift */,
-			);
-			path = RootTabBarUseCase;
 			sourceTree = "<group>";
 		};
 		D0F6A7A927BE45E900B9029D /* DetailsUseCase */ = {
