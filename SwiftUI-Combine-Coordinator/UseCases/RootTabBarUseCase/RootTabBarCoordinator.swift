@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 final class RootTabBarCoordinator: Coordinator, TabCoordinatorProtocol {
-    private let window: UIWindow
+    internal let window: UIWindow
     
     var rootTabBarController: UITabBarController?
     

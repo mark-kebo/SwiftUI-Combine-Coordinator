@@ -15,6 +15,7 @@ protocol CoordinatorProtocol {
 }
 
 protocol TabCoordinatorProtocol {
+    var window: UIWindow { get }
     var rootTabBarController: UITabBarController? { get }
     func start()
 }
