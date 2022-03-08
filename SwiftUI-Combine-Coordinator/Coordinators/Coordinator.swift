@@ -14,6 +14,11 @@ protocol CoordinatorProtocol {
     func start()
 }
 
+protocol TabCoordinatorProtocol {
+    var rootTabBarController: UITabBarController? { get }
+    func start()
+}
+
 class Coordinator {
     deinit {
         NSLog("\(self) deinited")

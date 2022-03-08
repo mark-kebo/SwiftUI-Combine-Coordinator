@@ -8,30 +8,31 @@
 import SwiftUI
 import UIKit
 
-protocol RootTabBarCoordinatorProtocol: CoordinatorProtocol {
-    func coordinateToDetails()
-}
-
-final class RootTabBarCoordinator: Coordinator, RootTabBarCoordinatorProtocol {
-    var rootNavigationController: UINavigationController?
+final class RootTabBarCoordinator: Coordinator, TabCoordinatorProtocol {
+    private let window: UIWindow
     
-    var view: AnyView? {
-        var rootTabBarView = RootTabBarView()
-        rootTabBarView.viewModel = RootTabBarViewModel(coordinator: self)
-        return AnyView(rootTabBarView)
-    }
+    var rootTabBarController: UITabBarController?
     
-    init(rootNavigationController: UINavigationController?) {
-        self.rootNavigationController = rootNavigationController
+    init(window: UIWindow) {
+        self.window = window
     }
     
     func start() {
-        let controller = UIHostingController(rootView: view)
-        rootNavigationController?.pushViewController(controller, animated: true)
-    }
-    
-    func coordinateToDetails() {
-        let coordinator = DetailsCoordinator(rootNavigationController: rootNavigationController)
-        coordinator.start()
+        rootTabBarController = UITabBarController()
+        let tabOne = UINavigationController()
+        let tabOneBarItem = UITabBarItem(title: "Tab 1",
+                                         image: UIImage(named: "defaultImage.png"),
+                                         selectedImage: UIImage(named: "selectedImage.png"))
+        tabOne.tabBarItem = tabOneBarItem
+        let tabTwo = UINavigationController()
+        let tabTwoBarItem2 = UITabBarItem(title: "Tab 2", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
+        tabTwo.tabBarItem = tabTwoBarItem2
+        rootTabBarController?.viewControllers = [tabOne, tabTwo]
+        
+        FirstCoordinator(rootNavigationController: tabOne).start()
+        SecondCoordinator(rootNavigationController: tabTwo).start()
+
+        window.rootViewController = rootTabBarController
+        window.makeKeyAndVisible()
     }
 }

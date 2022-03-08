@@ -13,12 +13,16 @@
 		D03175D627BD0EB80015A19E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03175D427BD0EB80015A19E /* LaunchScreen.storyboard */; };
 		D03175E127BD101D0015A19E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175E027BD101D0015A19E /* Coordinator.swift */; };
 		D03175E327BD14A90015A19E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175E227BD14A90015A19E /* AppCoordinator.swift */; };
-		D03175E827BD15740015A19E /* RootTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175E727BD15740015A19E /* RootTabBarView.swift */; };
-		D03175EA27BD15890015A19E /* RootTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175E927BD15890015A19E /* RootTabBarViewModel.swift */; };
 		D03175EC27BD1EFD0015A19E /* RootTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175EB27BD1EFD0015A19E /* RootTabBarCoordinator.swift */; };
 		D0F6A7AC27BE467D00B9029D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7AB27BE467C00B9029D /* DetailsView.swift */; };
 		D0F6A7AE27BE468F00B9029D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7AD27BE468F00B9029D /* DetailsViewModel.swift */; };
 		D0F6A7B027BE469F00B9029D /* DetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7AF27BE469F00B9029D /* DetailsCoordinator.swift */; };
+		D0F6A7B627BE900600B9029D /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */; };
+		D0F6A7B827BE901500B9029D /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7B727BE901500B9029D /* SecondCoordinator.swift */; };
+		D0F6A7BA27BE902E00B9029D /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7B927BE902E00B9029D /* SecondViewModel.swift */; };
+		D0F6A7BC27BE904000B9029D /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7BB27BE904000B9029D /* FirstViewModel.swift */; };
+		D0F6A7BE27BE905300B9029D /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7BD27BE905300B9029D /* FirstView.swift */; };
+		D0F6A7C027BE906700B9029D /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7BF27BE906700B9029D /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +35,16 @@
 		D03175DD27BD0EF00015A19E /* SwiftUI-Combine-Coordinator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-Combine-Coordinator.entitlements"; sourceTree = "<group>"; };
 		D03175E027BD101D0015A19E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		D03175E227BD14A90015A19E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		D03175E727BD15740015A19E /* RootTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarView.swift; sourceTree = "<group>"; };
-		D03175E927BD15890015A19E /* RootTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewModel.swift; sourceTree = "<group>"; };
 		D03175EB27BD1EFD0015A19E /* RootTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarCoordinator.swift; sourceTree = "<group>"; };
 		D0F6A7AB27BE467C00B9029D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		D0F6A7AD27BE468F00B9029D /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		D0F6A7AF27BE469F00B9029D /* DetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoordinator.swift; sourceTree = "<group>"; };
+		D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
+		D0F6A7B727BE901500B9029D /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
+		D0F6A7B927BE902E00B9029D /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		D0F6A7BB27BE904000B9029D /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
+		D0F6A7BD27BE905300B9029D /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		D0F6A7BF27BE906700B9029D /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,8 @@
 		D03175DF27BD0FDC0015A19E /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				D0F6A7B227BE8FBB00B9029D /* SecondUseCase */,
+				D0F6A7B127BE8FAD00B9029D /* FirstUseCase */,
 				D0F6A7A927BE45E900B9029D /* DetailsUseCase */,
 				D03175E427BD151D0015A19E /* RootTabBarUseCase */,
 			);
@@ -102,19 +112,9 @@
 		D03175E427BD151D0015A19E /* RootTabBarUseCase */ = {
 			isa = PBXGroup;
 			children = (
-				D03175E527BD154B0015A19E /* RootTabBarDTO */,
-				D03175E727BD15740015A19E /* RootTabBarView.swift */,
 				D03175EB27BD1EFD0015A19E /* RootTabBarCoordinator.swift */,
 			);
 			path = RootTabBarUseCase;
-			sourceTree = "<group>";
-		};
-		D03175E527BD154B0015A19E /* RootTabBarDTO */ = {
-			isa = PBXGroup;
-			children = (
-				D03175E927BD15890015A19E /* RootTabBarViewModel.swift */,
-			);
-			path = RootTabBarDTO;
 			sourceTree = "<group>";
 		};
 		D0F6A7A927BE45E900B9029D /* DetailsUseCase */ = {
@@ -133,6 +133,42 @@
 				D0F6A7AD27BE468F00B9029D /* DetailsViewModel.swift */,
 			);
 			path = DetailsDTO;
+			sourceTree = "<group>";
+		};
+		D0F6A7B127BE8FAD00B9029D /* FirstUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				D0F6A7B427BE8FD800B9029D /* FirstDTO */,
+				D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */,
+				D0F6A7BD27BE905300B9029D /* FirstView.swift */,
+			);
+			path = FirstUseCase;
+			sourceTree = "<group>";
+		};
+		D0F6A7B227BE8FBB00B9029D /* SecondUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				D0F6A7B327BE8FCC00B9029D /* SecondDTO */,
+				D0F6A7B727BE901500B9029D /* SecondCoordinator.swift */,
+				D0F6A7BF27BE906700B9029D /* SecondView.swift */,
+			);
+			path = SecondUseCase;
+			sourceTree = "<group>";
+		};
+		D0F6A7B327BE8FCC00B9029D /* SecondDTO */ = {
+			isa = PBXGroup;
+			children = (
+				D0F6A7B927BE902E00B9029D /* SecondViewModel.swift */,
+			);
+			path = SecondDTO;
+			sourceTree = "<group>";
+		};
+		D0F6A7B427BE8FD800B9029D /* FirstDTO */ = {
+			isa = PBXGroup;
+			children = (
+				D0F6A7BB27BE904000B9029D /* FirstViewModel.swift */,
+			);
+			path = FirstDTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,14 +241,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03175EA27BD15890015A19E /* RootTabBarViewModel.swift in Sources */,
+				D0F6A7BE27BE905300B9029D /* FirstView.swift in Sources */,
+				D0F6A7C027BE906700B9029D /* SecondView.swift in Sources */,
 				D03175E327BD14A90015A19E /* AppCoordinator.swift in Sources */,
-				D03175E827BD15740015A19E /* RootTabBarView.swift in Sources */,
+				D0F6A7B827BE901500B9029D /* SecondCoordinator.swift in Sources */,
 				D03175CA27BD0EB60015A19E /* AppDelegate.swift in Sources */,
+				D0F6A7B627BE900600B9029D /* FirstCoordinator.swift in Sources */,
+				D0F6A7BA27BE902E00B9029D /* SecondViewModel.swift in Sources */,
 				D03175CC27BD0EB60015A19E /* SceneDelegate.swift in Sources */,
 				D0F6A7AC27BE467D00B9029D /* DetailsView.swift in Sources */,
 				D03175E127BD101D0015A19E /* Coordinator.swift in Sources */,
 				D03175EC27BD1EFD0015A19E /* RootTabBarCoordinator.swift in Sources */,
+				D0F6A7BC27BE904000B9029D /* FirstViewModel.swift in Sources */,
 				D0F6A7AE27BE468F00B9029D /* DetailsViewModel.swift in Sources */,
 				D0F6A7B027BE469F00B9029D /* DetailsCoordinator.swift in Sources */,
 			);

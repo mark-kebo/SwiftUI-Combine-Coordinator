@@ -1,18 +1,18 @@
 //
-//  RootTabBarView.swift
+//  FirstView.swift
 //  SwiftUI-Combine-Coordinator
 //
-//  Created by Dmitry Vorozhbicki on 16/02/2022.
+//  Created by Dmitry Vorozhbicki on 17/02/2022.
 //
 
 import SwiftUI
 
-struct RootTabBarView: View {
-    public var viewModel: RootTabBarViewModel?
+struct FirstView: View {
+    public var viewModel: FirstViewModel?
     
     var body: some View {
         VStack {
-            Text("Tabs")
+            Text("First View")
             Button("Next") {
                 viewModel?.buttonPressed()
             }
@@ -20,8 +20,8 @@ struct RootTabBarView: View {
     }
 }
 
-struct RootTabBarView_Previews: PreviewProvider {
+struct FirstView_Previews: PreviewProvider {
     static var previews: some View {
-        RootTabBarView()
+        FirstView()
     }
 }

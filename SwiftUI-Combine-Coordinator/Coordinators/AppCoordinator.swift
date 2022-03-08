@@ -19,14 +19,11 @@ final class AppCoordinator: Coordinator, CoordinatorProtocol {
     }
 
     func start() {
-        rootNavigationController = UINavigationController()
-        window.rootViewController = rootNavigationController
-        window.makeKeyAndVisible()
         showTabBar()
     }
 
     private func showTabBar() {
-        let childCoordinator = RootTabBarCoordinator(rootNavigationController: rootNavigationController)
+        let childCoordinator = RootTabBarCoordinator(window: window)
         childCoordinator.start()
     }
 }
