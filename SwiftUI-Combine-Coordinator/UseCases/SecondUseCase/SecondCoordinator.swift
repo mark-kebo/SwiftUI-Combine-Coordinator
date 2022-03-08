@@ -13,7 +13,6 @@ protocol SecondCoordinatorProtocol: CoordinatorProtocol {
 }
 
 final class SecondCoordinator: Coordinator, SecondCoordinatorProtocol {
-    
     var rootNavigationController: UINavigationController?
     
     var view: AnyView? {

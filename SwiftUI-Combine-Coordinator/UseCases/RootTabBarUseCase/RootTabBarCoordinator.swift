@@ -21,11 +21,13 @@ final class RootTabBarCoordinator: Coordinator, TabCoordinatorProtocol {
         rootTabBarController = UITabBarController()
         let tabOne = UINavigationController()
         let tabOneBarItem = UITabBarItem(title: "Tab 1",
-                                         image: UIImage(named: "defaultImage.png"),
-                                         selectedImage: UIImage(named: "selectedImage.png"))
+                                         image: UIImage(systemName: "scribble"),
+                                         selectedImage: UIImage(systemName: "scribble.variable"))
         tabOne.tabBarItem = tabOneBarItem
         let tabTwo = UINavigationController()
-        let tabTwoBarItem2 = UITabBarItem(title: "Tab 2", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
+        let tabTwoBarItem2 = UITabBarItem(title: "Tab 2",
+                                          image: UIImage(systemName: "square.and.arrow.up"),
+                                          selectedImage: UIImage(systemName: "square.and.arrow.up.fill"))
         tabTwo.tabBarItem = tabTwoBarItem2
         rootTabBarController?.viewControllers = [tabOne, tabTwo]
         
