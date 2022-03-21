@@ -15,10 +15,10 @@ protocol SecondCoordinatorProtocol: CoordinatorProtocol {
 final class SecondCoordinator: Coordinator, SecondCoordinatorProtocol {
     var rootNavigationController: UINavigationController?
     
-    var view: AnyView? {
-        var childView = SecondView()
-        childView.viewModel = SecondViewModel(coordinator: self)
-        return AnyView(childView)
+    var viewController: UIViewController? {
+        let childViewController = SecondViewController(nibName: "SecondViewController", bundle: nil)
+        childViewController.viewModel = SecondViewModel(coordinator: self)
+        return childViewController
     }
     
     init(rootNavigationController: UINavigationController?) {
@@ -26,7 +26,7 @@ final class SecondCoordinator: Coordinator, SecondCoordinatorProtocol {
     }
     
     func start() {
-        let controller = UIHostingController(rootView: view)
+        guard let controller = viewController else { return }
         rootNavigationController?.pushViewController(controller, animated: true)
     }
     

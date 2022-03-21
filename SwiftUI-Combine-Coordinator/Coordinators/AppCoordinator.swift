@@ -12,7 +12,7 @@ final class AppCoordinator: Coordinator, CoordinatorProtocol {
     private let window: UIWindow
     
     var rootNavigationController: UINavigationController?
-    var view: AnyView?
+    var viewController: UIViewController?
 
     init(window: UIWindow) {
         self.window = window

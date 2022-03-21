@@ -14,15 +14,18 @@
 		D03175E127BD101D0015A19E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175E027BD101D0015A19E /* Coordinator.swift */; };
 		D03175E327BD14A90015A19E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175E227BD14A90015A19E /* AppCoordinator.swift */; };
 		D03175EC27BD1EFD0015A19E /* RootTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175EB27BD1EFD0015A19E /* RootTabBarCoordinator.swift */; };
-		D0F6A7AC27BE467D00B9029D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7AB27BE467C00B9029D /* DetailsView.swift */; };
+		D08B077B27E8837E00E5E761 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B077927E8837E00E5E761 /* FirstViewController.swift */; };
+		D08B077C27E8837E00E5E761 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08B077A27E8837E00E5E761 /* FirstViewController.xib */; };
+		D08B077F27E8857D00E5E761 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B077D27E8857D00E5E761 /* SecondViewController.swift */; };
+		D08B078027E8857D00E5E761 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08B077E27E8857D00E5E761 /* SecondViewController.xib */; };
+		D08B078327E8873D00E5E761 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B078127E8873D00E5E761 /* DetailsViewController.swift */; };
+		D08B078427E8873D00E5E761 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08B078227E8873D00E5E761 /* DetailsViewController.xib */; };
 		D0F6A7AE27BE468F00B9029D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7AD27BE468F00B9029D /* DetailsViewModel.swift */; };
 		D0F6A7B027BE469F00B9029D /* DetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7AF27BE469F00B9029D /* DetailsCoordinator.swift */; };
 		D0F6A7B627BE900600B9029D /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */; };
 		D0F6A7B827BE901500B9029D /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7B727BE901500B9029D /* SecondCoordinator.swift */; };
 		D0F6A7BA27BE902E00B9029D /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7B927BE902E00B9029D /* SecondViewModel.swift */; };
 		D0F6A7BC27BE904000B9029D /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7BB27BE904000B9029D /* FirstViewModel.swift */; };
-		D0F6A7BE27BE905300B9029D /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7BD27BE905300B9029D /* FirstView.swift */; };
-		D0F6A7C027BE906700B9029D /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7BF27BE906700B9029D /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,15 +39,18 @@
 		D03175E027BD101D0015A19E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		D03175E227BD14A90015A19E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		D03175EB27BD1EFD0015A19E /* RootTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarCoordinator.swift; sourceTree = "<group>"; };
-		D0F6A7AB27BE467C00B9029D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		D08B077927E8837E00E5E761 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D08B077A27E8837E00E5E761 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		D08B077D27E8857D00E5E761 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D08B077E27E8857D00E5E761 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		D08B078127E8873D00E5E761 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		D08B078227E8873D00E5E761 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		D0F6A7AD27BE468F00B9029D /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		D0F6A7AF27BE469F00B9029D /* DetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoordinator.swift; sourceTree = "<group>"; };
 		D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
 		D0F6A7B727BE901500B9029D /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
 		D0F6A7B927BE902E00B9029D /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		D0F6A7BB27BE904000B9029D /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
-		D0F6A7BD27BE905300B9029D /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
-		D0F6A7BF27BE906700B9029D /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				D0F6A7AA27BE465E00B9029D /* DetailsDTO */,
-				D0F6A7AB27BE467C00B9029D /* DetailsView.swift */,
 				D0F6A7AF27BE469F00B9029D /* DetailsCoordinator.swift */,
+				D08B078127E8873D00E5E761 /* DetailsViewController.swift */,
+				D08B078227E8873D00E5E761 /* DetailsViewController.xib */,
 			);
 			path = DetailsUseCase;
 			sourceTree = "<group>";
@@ -132,7 +139,8 @@
 			children = (
 				D0F6A7B427BE8FD800B9029D /* FirstDTO */,
 				D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */,
-				D0F6A7BD27BE905300B9029D /* FirstView.swift */,
+				D08B077927E8837E00E5E761 /* FirstViewController.swift */,
+				D08B077A27E8837E00E5E761 /* FirstViewController.xib */,
 			);
 			path = FirstUseCase;
 			sourceTree = "<group>";
@@ -142,7 +150,8 @@
 			children = (
 				D0F6A7B327BE8FCC00B9029D /* SecondDTO */,
 				D0F6A7B727BE901500B9029D /* SecondCoordinator.swift */,
-				D0F6A7BF27BE906700B9029D /* SecondView.swift */,
+				D08B077D27E8857D00E5E761 /* SecondViewController.swift */,
+				D08B077E27E8857D00E5E761 /* SecondViewController.xib */,
 			);
 			path = SecondUseCase;
 			sourceTree = "<group>";
@@ -221,7 +230,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D08B078027E8857D00E5E761 /* SecondViewController.xib in Resources */,
 				D03175D627BD0EB80015A19E /* LaunchScreen.storyboard in Resources */,
+				D08B078427E8873D00E5E761 /* DetailsViewController.xib in Resources */,
+				D08B077C27E8837E00E5E761 /* FirstViewController.xib in Resources */,
 				D03175D327BD0EB80015A19E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,20 +245,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F6A7BE27BE905300B9029D /* FirstView.swift in Sources */,
-				D0F6A7C027BE906700B9029D /* SecondView.swift in Sources */,
 				D03175E327BD14A90015A19E /* AppCoordinator.swift in Sources */,
 				D0F6A7B827BE901500B9029D /* SecondCoordinator.swift in Sources */,
 				D03175CA27BD0EB60015A19E /* AppDelegate.swift in Sources */,
 				D0F6A7B627BE900600B9029D /* FirstCoordinator.swift in Sources */,
+				D08B077F27E8857D00E5E761 /* SecondViewController.swift in Sources */,
 				D0F6A7BA27BE902E00B9029D /* SecondViewModel.swift in Sources */,
 				D03175CC27BD0EB60015A19E /* SceneDelegate.swift in Sources */,
-				D0F6A7AC27BE467D00B9029D /* DetailsView.swift in Sources */,
 				D03175E127BD101D0015A19E /* Coordinator.swift in Sources */,
 				D03175EC27BD1EFD0015A19E /* RootTabBarCoordinator.swift in Sources */,
 				D0F6A7BC27BE904000B9029D /* FirstViewModel.swift in Sources */,
 				D0F6A7AE27BE468F00B9029D /* DetailsViewModel.swift in Sources */,
+				D08B078327E8873D00E5E761 /* DetailsViewController.swift in Sources */,
 				D0F6A7B027BE469F00B9029D /* DetailsCoordinator.swift in Sources */,
+				D08B077B27E8837E00E5E761 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

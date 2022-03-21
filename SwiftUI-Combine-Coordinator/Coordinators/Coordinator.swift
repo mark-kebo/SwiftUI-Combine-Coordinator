@@ -10,7 +10,7 @@ import SwiftUI
 
 protocol CoordinatorProtocol {
     var rootNavigationController: UINavigationController? { get }
-    var view: AnyView? { get }
+    var viewController: UIViewController? { get }
     func start()
 }
 

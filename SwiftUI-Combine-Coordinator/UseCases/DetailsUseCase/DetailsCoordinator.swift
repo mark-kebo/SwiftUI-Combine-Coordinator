@@ -15,10 +15,10 @@ protocol DetailsCoordinatorProtocol: CoordinatorProtocol {
 final class DetailsCoordinator: Coordinator, DetailsCoordinatorProtocol {
     var rootNavigationController: UINavigationController?
     
-    var view: AnyView? {
-        var detailsView = DetailsView()
-        detailsView.viewModel = DetailsViewModel(coordinator: self)
-        return AnyView(detailsView)
+    var viewController: UIViewController? {
+        let childViewController = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
+        childViewController.viewModel = DetailsViewModel(coordinator: self)
+        return childViewController
     }
     
     init(rootNavigationController: UINavigationController?) {
@@ -26,7 +26,7 @@ final class DetailsCoordinator: Coordinator, DetailsCoordinatorProtocol {
     }
     
     func start() {
-        let controller = UIHostingController(rootView: view)
+        guard let controller = viewController else { return }
         rootNavigationController?.pushViewController(controller, animated: true)
     }
     
