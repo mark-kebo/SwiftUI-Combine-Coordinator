@@ -20,6 +20,8 @@
 		D08B078027E8857D00E5E761 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08B077E27E8857D00E5E761 /* SecondViewController.xib */; };
 		D08B078327E8873D00E5E761 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B078127E8873D00E5E761 /* DetailsViewController.swift */; };
 		D08B078427E8873D00E5E761 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08B078227E8873D00E5E761 /* DetailsViewController.xib */; };
+		D08B079627E8C8BE00E5E761 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B079527E8C8BE00E5E761 /* UIView+Extensions.swift */; };
+		D08B079D27E8C93F00E5E761 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B079C27E8C93F00E5E761 /* UIViewController+Extensions.swift */; };
 		D0F6A7AE27BE468F00B9029D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7AD27BE468F00B9029D /* DetailsViewModel.swift */; };
 		D0F6A7B027BE469F00B9029D /* DetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7AF27BE469F00B9029D /* DetailsCoordinator.swift */; };
 		D0F6A7B627BE900600B9029D /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */; };
@@ -45,6 +47,8 @@
 		D08B077E27E8857D00E5E761 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		D08B078127E8873D00E5E761 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D08B078227E8873D00E5E761 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		D08B079527E8C8BE00E5E761 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D08B079C27E8C93F00E5E761 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		D0F6A7AD27BE468F00B9029D /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		D0F6A7AF27BE469F00B9029D /* DetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoordinator.swift; sourceTree = "<group>"; };
 		D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 			children = (
 				D03175DF27BD0FDC0015A19E /* UseCases */,
 				D03175DE27BD0FCF0015A19E /* Coordinators */,
+				D08B079327E8C88300E5E761 /* Utils */,
 				D03175DD27BD0EF00015A19E /* SwiftUI-Combine-Coordinator.entitlements */,
 				D03175C927BD0EB60015A19E /* AppDelegate.swift */,
 				D03175CB27BD0EB60015A19E /* SceneDelegate.swift */,
@@ -113,6 +118,23 @@
 				D0F6A7A927BE45E900B9029D /* DetailsUseCase */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		D08B079327E8C88300E5E761 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D08B079427E8C89C00E5E761 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D08B079427E8C89C00E5E761 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D08B079527E8C8BE00E5E761 /* UIView+Extensions.swift */,
+				D08B079C27E8C93F00E5E761 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D0F6A7A927BE45E900B9029D /* DetailsUseCase */ = {
@@ -257,6 +279,8 @@
 				D0F6A7BC27BE904000B9029D /* FirstViewModel.swift in Sources */,
 				D0F6A7AE27BE468F00B9029D /* DetailsViewModel.swift in Sources */,
 				D08B078327E8873D00E5E761 /* DetailsViewController.swift in Sources */,
+				D08B079D27E8C93F00E5E761 /* UIViewController+Extensions.swift in Sources */,
+				D08B079627E8C8BE00E5E761 /* UIView+Extensions.swift in Sources */,
 				D0F6A7B027BE469F00B9029D /* DetailsCoordinator.swift in Sources */,
 				D08B077B27E8837E00E5E761 /* FirstViewController.swift in Sources */,
 			);

@@ -16,7 +16,8 @@ final class DetailsCoordinator: Coordinator, DetailsCoordinatorProtocol {
     var rootNavigationController: UINavigationController?
     
     var viewController: UIViewController? {
-        let childViewController = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
+        let childViewController = DetailsViewController(nibName: DetailsViewController.nibName,
+                                                        bundle: nil)
         childViewController.viewModel = DetailsViewModel(coordinator: self)
         return childViewController
     }

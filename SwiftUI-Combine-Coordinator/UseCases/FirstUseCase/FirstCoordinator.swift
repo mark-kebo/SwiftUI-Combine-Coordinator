@@ -16,7 +16,8 @@ final class FirstCoordinator: Coordinator, FirstCoordinatorProtocol {
     var rootNavigationController: UINavigationController?
     
     var viewController: UIViewController? {
-        let childViewController = FirstViewController(nibName: "FirstViewController", bundle: nil)
+        let childViewController = FirstViewController(nibName: FirstViewController.nibName,
+                                                      bundle: nil)
         childViewController.viewModel = FirstViewModel(coordinator: self)
         return childViewController
     }

@@ -16,7 +16,8 @@ final class SecondCoordinator: Coordinator, SecondCoordinatorProtocol {
     var rootNavigationController: UINavigationController?
     
     var viewController: UIViewController? {
-        let childViewController = SecondViewController(nibName: "SecondViewController", bundle: nil)
+        let childViewController = SecondViewController(nibName: SecondViewController.nibName,
+                                                       bundle: nil)
         childViewController.viewModel = SecondViewModel(coordinator: self)
         return childViewController
     }
