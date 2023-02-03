@@ -13,7 +13,7 @@ protocol SecondCoordinatorProtocol: CoordinatorProtocol {
 }
 
 final class SecondCoordinator: Coordinator, SecondCoordinatorProtocol {
-    var rootNavigationController: UINavigationController?
+    weak var rootNavigationController: UINavigationController?
     
     var viewController: UIViewController? {
         let childViewController = SecondViewController(nibName: SecondViewController.nibName,

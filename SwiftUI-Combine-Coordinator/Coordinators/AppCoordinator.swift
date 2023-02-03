@@ -11,15 +11,25 @@ import SwiftUI
 final class AppCoordinator: Coordinator, CoordinatorProtocol {
     private let window: UIWindow
     
-    var rootNavigationController: UINavigationController?
+    var rootNavigationController: UINavigationController? = UINavigationController()
     var viewController: UIViewController?
 
     init(window: UIWindow) {
         self.window = window
     }
+    
+    func initialize() {
+        window.rootViewController = rootNavigationController
+        window.makeKeyAndVisible()
+    }
 
     func start() {
-        showTabBar()
+        if Bool.random() {
+            showTabBar()
+        } else {
+            let details = DetailsCoordinator(rootNavigationController: rootNavigationController)
+            details.start()
+        }
     }
 
     private func showTabBar() {

@@ -9,6 +9,8 @@ import Foundation
 
 final class FirstViewModel {
     private let coordinator: FirstCoordinatorProtocol?
+    
+    let tableData: [String] = ["firstfirstfirstfirstfirstfirstfirstfir stfirstfirstfirstfirstfirstfir stfirstfirstfirstfirst", "second"]
 
     init(coordinator: FirstCoordinatorProtocol) {
         self.coordinator = coordinator

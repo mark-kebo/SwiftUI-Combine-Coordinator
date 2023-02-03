@@ -13,7 +13,7 @@ protocol FirstCoordinatorProtocol: CoordinatorProtocol {
 }
 
 final class FirstCoordinator: Coordinator, FirstCoordinatorProtocol {
-    var rootNavigationController: UINavigationController?
+    weak var rootNavigationController: UINavigationController?
     
     var viewController: UIViewController? {
         let childViewController = FirstViewController(nibName: FirstViewController.nibName,

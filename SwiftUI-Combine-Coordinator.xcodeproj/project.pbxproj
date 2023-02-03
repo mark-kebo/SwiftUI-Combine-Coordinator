@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D02637752976F49B00D21695 /* FlexiTooltipView in Frameworks */ = {isa = PBXBuildFile; productRef = D02637742976F49B00D21695 /* FlexiTooltipView */; };
 		D03175CA27BD0EB60015A19E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175C927BD0EB60015A19E /* AppDelegate.swift */; };
 		D03175CC27BD0EB60015A19E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03175CB27BD0EB60015A19E /* SceneDelegate.swift */; };
 		D03175D327BD0EB80015A19E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03175D227BD0EB80015A19E /* Assets.xcassets */; };
@@ -22,6 +23,10 @@
 		D08B078427E8873D00E5E761 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08B078227E8873D00E5E761 /* DetailsViewController.xib */; };
 		D08B079627E8C8BE00E5E761 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B079527E8C8BE00E5E761 /* UIView+Extensions.swift */; };
 		D08B079D27E8C93F00E5E761 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B079C27E8C93F00E5E761 /* UIViewController+Extensions.swift */; };
+		D0E4CD28284E143600E78563 /* CellCustomRegistration in Frameworks */ = {isa = PBXBuildFile; productRef = D0E4CD27284E143600E78563 /* CellCustomRegistration */; };
+		D0E4CD2B284E144500E78563 /* ListFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = D0E4CD2A284E144500E78563 /* ListFlowLayout */; };
+		D0E4CD31284E1CE300E78563 /* YourCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4CD2F284E1CE300E78563 /* YourCollectionViewCell.swift */; };
+		D0E4CD32284E1CE300E78563 /* YourCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E4CD30284E1CE300E78563 /* YourCollectionViewCell.xib */; };
 		D0F6A7AE27BE468F00B9029D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7AD27BE468F00B9029D /* DetailsViewModel.swift */; };
 		D0F6A7B027BE469F00B9029D /* DetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7AF27BE469F00B9029D /* DetailsCoordinator.swift */; };
 		D0F6A7B627BE900600B9029D /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */; };
@@ -49,6 +54,8 @@
 		D08B078227E8873D00E5E761 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		D08B079527E8C8BE00E5E761 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		D08B079C27E8C93F00E5E761 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D0E4CD2F284E1CE300E78563 /* YourCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0E4CD30284E1CE300E78563 /* YourCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourCollectionViewCell.xib; sourceTree = "<group>"; };
 		D0F6A7AD27BE468F00B9029D /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		D0F6A7AF27BE469F00B9029D /* DetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoordinator.swift; sourceTree = "<group>"; };
 		D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
@@ -62,17 +69,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E4CD2B284E144500E78563 /* ListFlowLayout in Frameworks */,
+				D02637752976F49B00D21695 /* FlexiTooltipView in Frameworks */,
+				D0E4CD28284E143600E78563 /* CellCustomRegistration in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D031485527F4718300E410AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D03175BD27BD0EB60015A19E = {
 			isa = PBXGroup;
 			children = (
 				D03175C827BD0EB60015A19E /* SwiftUI-Combine-Coordinator */,
 				D03175C727BD0EB60015A19E /* Products */,
+				D031485527F4718300E410AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +181,8 @@
 				D0F6A7B527BE900500B9029D /* FirstCoordinator.swift */,
 				D08B077927E8837E00E5E761 /* FirstViewController.swift */,
 				D08B077A27E8837E00E5E761 /* FirstViewController.xib */,
+				D0E4CD2F284E1CE300E78563 /* YourCollectionViewCell.swift */,
+				D0E4CD30284E1CE300E78563 /* YourCollectionViewCell.xib */,
 			);
 			path = FirstUseCase;
 			sourceTree = "<group>";
@@ -210,6 +230,11 @@
 			dependencies = (
 			);
 			name = "SwiftUI-Combine-Coordinator";
+			packageProductDependencies = (
+				D0E4CD27284E143600E78563 /* CellCustomRegistration */,
+				D0E4CD2A284E144500E78563 /* ListFlowLayout */,
+				D02637742976F49B00D21695 /* FlexiTooltipView */,
+			);
 			productName = "SwiftUI-Combine-Coordinator";
 			productReference = D03175C627BD0EB60015A19E /* SwiftUI-Combine-Coordinator.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +263,11 @@
 				Base,
 			);
 			mainGroup = D03175BD27BD0EB60015A19E;
+			packageReferences = (
+				D0E4CD26284E143600E78563 /* XCRemoteSwiftPackageReference "CellCustomRegistration" */,
+				D0E4CD29284E144500E78563 /* XCRemoteSwiftPackageReference "ListFlowLayout" */,
+				D02637732976F49B00D21695 /* XCRemoteSwiftPackageReference "FlexiTooltipView" */,
+			);
 			productRefGroup = D03175C727BD0EB60015A19E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +287,7 @@
 				D08B078427E8873D00E5E761 /* DetailsViewController.xib in Resources */,
 				D08B077C27E8837E00E5E761 /* FirstViewController.xib in Resources */,
 				D03175D327BD0EB80015A19E /* Assets.xcassets in Resources */,
+				D0E4CD32284E1CE300E78563 /* YourCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E4CD31284E1CE300E78563 /* YourCollectionViewCell.swift in Sources */,
 				D03175E327BD14A90015A19E /* AppCoordinator.swift in Sources */,
 				D0F6A7B827BE901500B9029D /* SecondCoordinator.swift in Sources */,
 				D03175CA27BD0EB60015A19E /* AppDelegate.swift in Sources */,
@@ -500,6 +532,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D02637732976F49B00D21695 /* XCRemoteSwiftPackageReference "FlexiTooltipView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mark-kebo/FlexiTooltipView";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		D0E4CD26284E143600E78563 /* XCRemoteSwiftPackageReference "CellCustomRegistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mark-kebo/CellCustomRegistration";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		D0E4CD29284E144500E78563 /* XCRemoteSwiftPackageReference "ListFlowLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mark-kebo/ListFlowLayout";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D02637742976F49B00D21695 /* FlexiTooltipView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D02637732976F49B00D21695 /* XCRemoteSwiftPackageReference "FlexiTooltipView" */;
+			productName = FlexiTooltipView;
+		};
+		D0E4CD27284E143600E78563 /* CellCustomRegistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0E4CD26284E143600E78563 /* XCRemoteSwiftPackageReference "CellCustomRegistration" */;
+			productName = CellCustomRegistration;
+		};
+		D0E4CD2A284E144500E78563 /* ListFlowLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0E4CD29284E144500E78563 /* XCRemoteSwiftPackageReference "ListFlowLayout" */;
+			productName = ListFlowLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D03175BE27BD0EB60015A19E /* Project object */;
 }

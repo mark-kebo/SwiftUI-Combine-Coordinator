@@ -13,7 +13,7 @@ protocol DetailsCoordinatorProtocol: CoordinatorProtocol {
 }
 
 final class DetailsCoordinator: Coordinator, DetailsCoordinatorProtocol {
-    var rootNavigationController: UINavigationController?
+    weak var rootNavigationController: UINavigationController?
     
     var viewController: UIViewController? {
         let childViewController = DetailsViewController(nibName: DetailsViewController.nibName,
@@ -32,6 +32,8 @@ final class DetailsCoordinator: Coordinator, DetailsCoordinatorProtocol {
     }
     
     func coordinateBack() {
-        rootNavigationController?.popViewController(animated: true)
+        guard let window = UIApplication.shared.windows.first else { return }
+        let appCoordinator = AppCoordinator(window: window)
+        appCoordinator.start()
     }
 }

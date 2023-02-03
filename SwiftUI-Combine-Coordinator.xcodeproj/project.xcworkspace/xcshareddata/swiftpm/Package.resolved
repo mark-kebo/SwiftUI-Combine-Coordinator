@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "cellcustomregistration",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mark-kebo/CellCustomRegistration",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e91c54632b280f004e361452328f51505da737de"
+      }
+    },
+    {
+      "identity" : "flexitooltipview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mark-kebo/FlexiTooltipView",
+      "state" : {
+        "branch" : "main",
+        "revision" : "53ce99516634f1781cddb88919094b0abbb19b5d"
+      }
+    },
+    {
+      "identity" : "listflowlayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mark-kebo/ListFlowLayout",
+      "state" : {
+        "branch" : "main",
+        "revision" : "19a987d28e90ff91a7c911a5ae9fb27b69ff2765"
+      }
+    }
+  ],
+  "version" : 2
+}

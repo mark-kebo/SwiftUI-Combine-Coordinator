@@ -28,21 +28,52 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlM-1N-K4X">
-                    <rect key="frame" x="178" y="400.5" width="58" height="21"/>
+                    <rect key="frame" x="178" y="401" width="58" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7U-mP-BOZ">
+                    <rect key="frame" x="16" y="815" width="382" height="31"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="right" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KEW-9F-MI7">
+                            <rect key="frame" x="95" y="0.0" width="192" height="31"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDO-xX-7Wo">
+                                    <rect key="frame" x="0.0" y="0.0" width="88" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Buttonadf"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSq-zC-sHd">
+                                    <rect key="frame" x="104" y="0.0" width="88" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Buttonadf"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="KEW-9F-MI7" firstAttribute="top" secondItem="T7U-mP-BOZ" secondAttribute="top" id="CPg-qb-LAP"/>
+                        <constraint firstItem="KEW-9F-MI7" firstAttribute="centerX" secondItem="T7U-mP-BOZ" secondAttribute="centerX" id="GPS-Kq-SAs"/>
+                        <constraint firstAttribute="bottom" secondItem="KEW-9F-MI7" secondAttribute="bottom" id="U4B-e2-Ocx"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KEW-9F-MI7" secondAttribute="trailing" id="Vdi-Se-z7G"/>
+                        <constraint firstItem="KEW-9F-MI7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="T7U-mP-BOZ" secondAttribute="leading" id="gnV-9r-Qis"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="W7e-vA-Hew" firstAttribute="top" secondItem="jlM-1N-K4X" secondAttribute="bottom" constant="16" id="4nz-5B-tHG"/>
+                <constraint firstItem="T7U-mP-BOZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KHp-Cf-oUn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="T7U-mP-BOZ" secondAttribute="bottom" constant="16" id="bok-0r-UrZ"/>
                 <constraint firstItem="W7e-vA-Hew" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="exT-Ya-HKZ"/>
                 <constraint firstItem="jlM-1N-K4X" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="lfQ-5n-ma0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T7U-mP-BOZ" secondAttribute="trailing" constant="16" id="n1Y-cl-qGc"/>
                 <constraint firstItem="W7e-vA-Hew" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="oOm-sw-tdg"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="114"/>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </view>
     </objects>
     <resources>
